@@ -14,7 +14,10 @@ print(type(counter))
 while counter <= 50 and counter % 2 != 0:
     print(counter)
     counter += 1 
-    counter2 += 1 
+    counter2 += 1
+
+for i in range(0, 51):
+    print(f"{i}: {i * 2}") 
 
 
 
