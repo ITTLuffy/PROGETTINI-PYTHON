@@ -21,8 +21,20 @@ def primiNumeriPrimi(n):
     print(len(primi))
 
 
-
-primiNumeriPrimi(100)
+while True:
+    # devo essere certo che l'utente abbia inserito un numero intero
+    a = input("Dimmi quanti numeri primi vuoi ")
+    try:
+        a = int(a)
+        if (a < 10 and a > 100):
+            print("Numero tra 10 e 1000")
+        else:
+            break
+    except:
+        print("Hai sbagliato, devi scrivere un numero intero")
+        
+primiNumeriPrimi(a)
+            
             
             
 def primiNumeriPrimiMiei(n):
@@ -45,4 +57,3 @@ def primiNumeriPrimiMiei(n):
     print(primi)
     print(len(primi))
 
-primiNumeriPrimiMiei(100)
