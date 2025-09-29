@@ -8,6 +8,8 @@ def primiNumeriPrimi(n):
         primo = True # variabile per stampare o no il numero
         
         for i in primi: # ciclo che gestisce tutti i numeri
+            if i > x / 2:
+                break
             if x % i == 0: # se non è primo
                 primo = False # non è primo
              
