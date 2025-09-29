@@ -4,7 +4,7 @@ def primiNumeriPrimi(n):
     
     x = 13
     indice = 0
-    while (len(primi) < n): # ciclo grande
+    while (len(primi) < n - 1): # ciclo grande
         primo = True # variabile per stampare o no il numero
         
         for i in primi: # ciclo che gestisce tutti i numeri
@@ -16,6 +16,7 @@ def primiNumeriPrimi(n):
         
         x += 2 # incremento la x di 2 (salto i pari)
     
+    primi.insert(0, 1)
     print(primi)
     print(len(primi))
 
@@ -28,7 +29,7 @@ def primiNumeriPrimiMiei(n):
     x = 2
     primi = []
     
-    while (len(primi) < n):
+    while (len(primi) < n - 1):
         isPrimo = True
         
         for i in range(2, int(math.sqrt(x)) + 1):
@@ -40,6 +41,7 @@ def primiNumeriPrimiMiei(n):
             primi.append(x)
         x += 1
         
+    primi.insert(0, 1)
     print(primi)
     print(len(primi))
 
